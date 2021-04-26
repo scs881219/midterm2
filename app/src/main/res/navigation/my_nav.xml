@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.midterm2.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/navigatetogame"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.midterm2.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/navigatetowin"
+            app:destination="@id/winFragment" />
+        <action
+            android:id="@+id/navigatetolose"
+            app:destination="@id/loseFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/winFragment"
+        android:name="com.example.midterm2.WinFragment"
+        android:label="fragment_win"
+        tools:layout="@layout/fragment_win" >
+        <action
+            android:id="@+id/winnavigatetogame"
+            app:destination="@id/gameFragment" />
+        <argument
+            android:name="gamewon"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/loseFragment"
+        android:name="com.example.midterm2.LoseFragment"
+        android:label="fragment_lose"
+        tools:layout="@layout/fragment_lose" >
+        <action
+            android:id="@+id/losenavigatetogame"
+            app:destination="@id/gameFragment" />
+        <argument android:name="answernumber"
+            app:argType="integer" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.midterm2.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+
+</navigation>

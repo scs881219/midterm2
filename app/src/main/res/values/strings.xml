@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Midterm2</string>
+    <string name="welcome">Guessing Game</string>
+    <string name="about_button">About me</string>
+    <string name="about">This is a guessing number game made by 410721318 施智翔</string>
+    <string name="play_button">Play</string>
+    <string name="guess">Please enter your guess ↓</string>
+    <string name="number">Number</string>
+    <string name="confirm">Confirm</string>
+    <string name="message">Message will show at here</string>
+    <string name="str1">Should be greater than </string>
+    <string name="str2">Should be less than </string>
+    <string name="fail">You Failed! Please try again !</string>
+    <string name="play_again">Play Again</string>
+    <string name="congratulations">Congratulations !</string>
+    <string name="numberguess">Your number of guess is:</string>
+    <string name="answeris">The correct answer is :</string>
+    <string name="about_me">About me</string>
+
+</resources>
